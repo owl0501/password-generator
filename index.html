@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <script src="main.js" defer></script>
+    <title>Password Generator</title>
+</head>
+
+<body class="dark-theme">
+    <div class="wrap ">
+        <div class="pw-header">
+            <div class="title">Password Generator</div>
+            <div id="pw" class="pw">
+                
+            </div>
+            <button id="btn-copy" class="btn-base btn-copy">C</button>
+        </div>
+        
+        <div class="pw-body">
+            <div class="form-control">
+                <lable for="length">Password Length</lable>
+                <input type="number" value="10" min="2" max="20" id="pw-length" class="input-length">
+            </div>
+            <div class="form-control">
+                <lable for="number">Contains numbers</lable>
+                <input type="checkbox" id="number">
+            </div>
+            <div class="form-control">
+                <lable for="upper">Contain Uppercase Letters</lable>
+                <input type="checkbox" id="upper">
+            </div>
+            <div class="form-control">
+                <lable for="lower">Contain Lowercase Letters</lable>
+                <input type="checkbox" id="lower">
+            </div>
+            <div class="form-control">
+                <lable for="symbol">Contain Symbols</lable>
+                <input type="checkbox" id="symbol">
+            </div>
+            <button id="btn-generate"class="btn-base btn-generate">Genere Password</button>
+
+        </div>
+    </div>
+</body>
+
+</html>

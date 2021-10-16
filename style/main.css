@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+@import 'color-theme.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--bg);
+    font-family: 'Poppings', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap{
+    font-weight: bolder;
+    background: var(--fg);
+    width: 320px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(170, 170, 170, 0.364);
+    color: var(--normal-ft-color);
+    padding: 1rem;
+    padding-bottom: 10px;
+}
+/*header*/
+.pw-header{
+    position: relative;
+}
+.pw-header .title{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.pw-header .pw{
+    width: 100%;
+    height: 36px;
+    background-color: rgb(9, 9, 9);
+    border-radius: 3px;
+    padding: calc((36px - 1rem) / 2);
+    text-align: start;
+    font-weight: normal;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+/*Button*/
+.btn-base{
+    background-color: var(--normal-ft-color);
+    border: none;
+    border-radius: 3px;
+    color: #000;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: opacity .5s ease-in-out;
+}
+.btn-base:hover{
+    opacity: 1;
+    
+}
+.btn-copy{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 40px;
+    right: 3px;
+}
+.btn-generate{
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+
+/*pw-body*/
+.form-control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.form-control .input-length{
+    width: 60px;
+    font-size: 16px;
+    border-radius: 2px;
+    border: none;
+    padding: 3px;
+}
+.form-control input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+
+
+
